@@ -1,0 +1,45 @@
+html {
+  min-height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #131313;
+  background-image: linear-gradient(
+      0deg,
+      rgba(212, 214, 219, 0.6) 0%,
+      rgba(212, 214, 219, 0.6) 1%,
+      transparent 2%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      rgba(212, 214, 219, 0.6) 0%,
+      rgba(212, 214, 219, 0.6) 1%,
+      transparent 2%,
+      transparent
+    );
+  /* linear-gradient(
+    0deg,
+    rgba(219, 212, 212, 0.6) 0%,
+    rgba(255, 8, 0, 0.6) 1%,
+    transparent 2%,
+    transparent
+    ),
+    linear-gradient(90deg, rgba(212, 214, 219, 0.6) 0%, rgba(255, 0, 0, 0.6) 1%, transparent 2%, transparent); */
+  background-size: 50px 50px, 50px 50px;
+  background-position: center center;
+  animation-name: bg;
+  animation-iteration-count: infinite;
+  animation-duration: 5000s;
+}
+
+@keyframes bg {
+  from {
+    background-size: 50px 50px, 50px 50px;
+    background-color: #131313;
+  }
+  to {
+    background-size: 100px 100px, 100px 100px;
+    background-color: #333333;
+  }
+}
