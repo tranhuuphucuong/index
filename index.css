@@ -31,6 +31,7 @@ body {
   animation-name: bg;
   animation-iteration-count: infinite;
   animation-duration: 5000s;
+  background: none;
 }
 
 @keyframes bg {
